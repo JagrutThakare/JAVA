@@ -1,3 +1,5 @@
+package Chapter11.CreatingThreads;
+
 class NewThread implements Runnable {
     String name;
     Thread t;

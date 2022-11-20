@@ -1,3 +1,5 @@
+package Chapter10.Throws;
+
 
 // syntax
 // throw ThrowableInstance

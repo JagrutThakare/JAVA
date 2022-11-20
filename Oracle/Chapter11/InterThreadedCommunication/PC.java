@@ -1,4 +1,4 @@
-package InterThreadedCommunication;
+package Chapter11.InterThreadedCommunication;
 
 class Q {
     int n;

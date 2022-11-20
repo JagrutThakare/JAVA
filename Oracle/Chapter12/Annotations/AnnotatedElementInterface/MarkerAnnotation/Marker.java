@@ -1,4 +1,4 @@
-package Annotations.AnnotatedElementInterface.MarkerAnnotation;
+package Chapter12.Annotations.AnnotatedElementInterface.MarkerAnnotation;
 
 import java.lang.annotation.*;
 import java.lang.reflect.*;

@@ -1,4 +1,4 @@
-package Annotations.AnnotatedElementInterface;
+package Chapter12.Annotations.AnnotatedElementInterface;
 
 import java.lang.annotation.*;
 import java.lang.reflect.*;

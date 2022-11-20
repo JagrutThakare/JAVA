@@ -1,4 +1,4 @@
-package Annotations.TypeAnnotation;
+package Chapter12.Annotations.TypeAnnotation;
 
 // Demonstrate several type annotations.
 import java.lang.annotation.*;

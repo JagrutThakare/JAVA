@@ -1,4 +1,4 @@
-package Syncronization;
+package Chapter11.Syncronization;
 // Imagine we want to synchronize access to to obj of a class that wasn't designed for multithreading
 
 // access. That is class does not use synchronized methods and this class is not accessible cuz it was not created by us

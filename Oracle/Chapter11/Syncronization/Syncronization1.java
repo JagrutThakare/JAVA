@@ -1,4 +1,4 @@
-package Syncronization;
+package Chapter11.Syncronization;
 // to enter a objects monitor call method modified with synchronized keyword
 
 //race condition : when nothing exist to stop many threads from calling the same method on the same obj at same time

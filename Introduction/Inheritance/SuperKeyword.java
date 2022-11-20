@@ -1,4 +1,4 @@
-
+package Inheritance;
 
 public class SuperKeyword {
     

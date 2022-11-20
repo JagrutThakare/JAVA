@@ -1,3 +1,5 @@
+package Chapter10;
+
 // Multi Catch feature
 /*
 alllows the same catch to catch two or more exceptions

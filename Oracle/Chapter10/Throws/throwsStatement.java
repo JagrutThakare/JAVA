@@ -1,3 +1,5 @@
+package Chapter10.Throws;
+
 /*
 
 If a method is capable of causing an exception that it does not handle it must specify this behaviour so that callers of method guard themselves. You do this by Throws clause

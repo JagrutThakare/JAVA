@@ -1,4 +1,4 @@
-package Annotations;
+package Chapter12.Annotations;
 
 // Show all annotations for a class and a method.
 import java.lang.annotation.*;

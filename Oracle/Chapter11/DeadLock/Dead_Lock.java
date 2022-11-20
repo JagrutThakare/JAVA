@@ -1,4 +1,4 @@
-package DeadLock;
+package Chapter11.DeadLock;
 
 // An example of deadlock.
 class A {

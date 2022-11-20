@@ -1,4 +1,4 @@
-
+package Inheritance;
 
 public class Teacher extends Person { // Person is father of Teacher
     

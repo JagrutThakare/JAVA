@@ -1,3 +1,5 @@
+package Chapter10;
+
 //making your own exception subclasses
 
 

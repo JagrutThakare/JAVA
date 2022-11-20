@@ -1,3 +1,5 @@
+package Chapter11.CreatingThreads;
+
 class NewThread extends Thread {
 
     NewThread() {

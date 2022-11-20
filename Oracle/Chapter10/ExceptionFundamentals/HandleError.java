@@ -1,3 +1,5 @@
+package Chapter10.ExceptionFundamentals;
+
 
 // In case of multiple catch clauses the first one to have similar exception is executed and other catch clauses are bypassed most like if else.
 // Exception subclasses must come before their superclasses

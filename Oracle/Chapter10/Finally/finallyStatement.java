@@ -1,3 +1,5 @@
+package Chapter10.Finally;
+
 /*
 
 finally creates block of code executed after try/catch and before it

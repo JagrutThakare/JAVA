@@ -1,4 +1,4 @@
-package Enumerations;
+package Chapter12.Enumerations;
 
 import java.util.Random;
 

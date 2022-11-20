@@ -1,3 +1,5 @@
+package Chapter10;
+
 
 //Chained exception feature allows you to associate another exception with an exception
 // This second exception describes cause of the first exception.

@@ -1,3 +1,5 @@
+package Chapter11;
+
 // Suspending and resuming a thread the modern way.
 class NewThread implements Runnable {
     String name; // name of thread

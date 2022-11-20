@@ -1,4 +1,4 @@
-package Annotations.TypeAnnotation;
+package Chapter12.Annotations.TypeAnnotation;
 
 // Demonstrate a repeated annotation.
 import java.lang.annotation.*;
