@@ -61,4 +61,4 @@ class InstanceOf {
     }
 }
 //Parent Object can be cast to Child Class 
-//Child Object can be cast to Child Class
+//Child Object can be cast to Parent Class
