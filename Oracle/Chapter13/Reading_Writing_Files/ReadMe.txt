@@ -1,0 +1,1 @@
+Note : Certain things dont work from vs code Terminal Consider Creating A new Folder on Desktop and try running from terminal/Cmd.
