@@ -87,7 +87,7 @@ public class BinaryTreesYT {
         System.out.print(root.data + " ");
     }
 
-    public static void levelOrder(Node root) {
+    public static void levelOrder(Node root) { 
         if (root == null) {
             return;
         }
@@ -223,6 +223,9 @@ public class BinaryTreesYT {
         System.out.println("Sum of nodes: " + sumOfNodes(root));
 
         System.out.println("Diameter of tree: " + diameter2(root).diam);
+        System.out.println('\n');
+        levelOrder2(root);
+        
 
 
 

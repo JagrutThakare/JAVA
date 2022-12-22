@@ -26,6 +26,9 @@ public class EnumDemo {
 
         ap = Apple.GoldenDel;
 
+        // for(Apple apple : Apple.values()) System.out.println(apple);
+        
+
         if (ap == Apple.GoldenDel) {
             System.out.println("ap contains GoldenDel\n");
         }
