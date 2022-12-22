@@ -224,7 +224,6 @@ public class BinaryTreesYT {
 
         System.out.println("Diameter of tree: " + diameter2(root).diam);
         System.out.println('\n');
-        levelOrder2(root);
         
 
 
