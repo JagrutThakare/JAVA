@@ -2,6 +2,7 @@ package DSA.BinaryTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class BinaryTreesYT {
     static class Node {
@@ -14,7 +15,7 @@ public class BinaryTreesYT {
             this.left = null;
             this.right = null;
         }
-    }
+    }   
 
     static class BinaryTree {
         static int idx = -1;
@@ -28,6 +29,33 @@ public class BinaryTreesYT {
             newNode.left = buildTree(nodes);
             newNode.right = buildTree(nodes);
             return newNode;
+        }
+    }
+
+    static class BinaryTree2 {
+        static int idx = -1;
+
+        public static Node2 buildTree(char nodes[]) {
+            idx++;
+            if (nodes[idx] == '1') {
+                return null;
+            }
+            Node2 newNode = new Node2(nodes[idx]);
+            newNode.left = buildTree(nodes);
+            newNode.right = buildTree(nodes);
+            return newNode;
+        }
+    }
+
+    static class Node2 {
+        char data;
+        Node2 left;
+        Node2 right;
+
+        Node2(char data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
         }
     }
 
@@ -65,6 +93,29 @@ public class BinaryTreesYT {
         System.out.print(root.data + " ");
         preorder(root.left);
         preorder(root.right);
+    }
+
+    public static void preorderIterative(Node2 root) {
+        Stack<Node2> stack = new Stack<>();
+        stack.push(null);
+        Node2 curr = root;
+        System.out.print(root.data + " ");
+        
+        while(!stack.isEmpty()) {
+            if(curr.right != null) {
+                stack.push(curr.right);
+            }
+            if(curr.left == null) {
+                curr = stack.pop();
+                if(curr == null) { break; }
+                System.out.print(curr.data + " ");
+            } else {
+                curr = curr.left;
+                System.out.print(curr.data + " ");
+            }
+                
+        }
+        
     }
 
     public static void inorder(Node root) {
@@ -151,8 +202,9 @@ public class BinaryTreesYT {
             return 0;
         }
 
-        int diam1 = height(root.left) + height(root.right) + 1;
-        int diam2 = diameter(root.left);
+        int diam1 = height(root.left) + height(root.right) + 1;//O(N)
+
+        int diam2 = diameter(root.left); //O(N) for both diam2 and 3
         int diam3 = diameter(root.right);
 
         return Math.max(diam1, Math.max(diam2, diam3));
@@ -196,13 +248,14 @@ public class BinaryTreesYT {
         }
         if (root == null) {
             return false;
-
         }
         if (root.val == subRoot.val && isIdentical(root, subRoot)) {
             return true;
         }
         return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
     }
+
+
 
     public static void main(String args[]) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
@@ -223,10 +276,12 @@ public class BinaryTreesYT {
         System.out.println("Sum of nodes: " + sumOfNodes(root));
 
         System.out.println("Diameter of tree: " + diameter2(root).diam);
-        System.out.println('\n');
         
 
+        char node[] = { 'A', 'B', 'D', '1', '1', 'E', 'F', '1', '1', '1', 'C', 'G', '1', '1', 'H', 'J', '1', '1', 'K' ,'1', '1',};
 
+        Node2 root2 = BinaryTreesYT.BinaryTree2.buildTree(node);
+        preorderIterative(root2);
 
 
     }
