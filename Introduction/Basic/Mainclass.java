@@ -1,5 +1,4 @@
 package Basic;
-
 class cat {
 
     int legs = 1;

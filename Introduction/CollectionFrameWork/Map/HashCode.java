@@ -17,7 +17,6 @@ public class HashCode {
         pens.add(pen1);
         pens.add(pen2);
         System.out.println(pens);
-        
     }
 }
 
@@ -39,7 +38,7 @@ class Pen {
         return result;
     }
 
-    @Override
+    @Override 
     public boolean equals(Object obj) {
         if (this == obj)
             return true;

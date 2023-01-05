@@ -22,11 +22,15 @@ public class MainClass {
         System.out.println(num.values());
         System.out.println(num.entrySet());
 
-        Set<Entry<String, Integer>> entries = num.entrySet();
+        // Set<Entry<String, Integer>> entries = num.entrySet();
         
-        for(Entry<String, Integer> entry : entries) {
-            entry.setValue(entry.getValue()*100);
-        }
-        System.out.println(num);
+        // for(Entry<String, Integer> entry : entries) {
+        //     entry.setValue(entry.getValue()*100);
+        // }
+        // System.out.println(num);
+
+        for(Map.Entry<String, Integer> entry : num.entrySet()) System.out.println(entry.getKey() + "=" + entry.getValue());
+        
+        
     }
 }
