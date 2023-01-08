@@ -1,7 +1,6 @@
 package CollectionFrameWork.Map;
 
 import java.util.*;
-import java.util.Map.Entry;
 
 public class MainClass {
     public static void main(String[] args) {
